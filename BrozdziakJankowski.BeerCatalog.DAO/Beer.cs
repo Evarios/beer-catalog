@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BrozdziakJankowski.BeerCatalog.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace BrozdziakJankowski.BeerCatalog.DAO
     {
         public int BeerId { get; set; } // Primary Key
         public string Name { get; set; }
-        public string Type { get; set; }
+        public BeerType Type { get; set; }
         public double AlcoholContent { get; set; }
         public int ProducerId { get; set; } // Foreign Key
 
