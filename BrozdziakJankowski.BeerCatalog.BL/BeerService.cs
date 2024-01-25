@@ -29,7 +29,7 @@ namespace BrozdziakJankowski.BeerCatalog.BL
         }
 
         public void AddBeer(Beer beer)
-        {
+        {   
             _beerRepository.AddBeer(beer);
         }
 

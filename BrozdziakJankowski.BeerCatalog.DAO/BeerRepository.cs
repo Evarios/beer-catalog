@@ -33,6 +33,7 @@ namespace BrozdziakJankowski.BeerCatalog.DAO
             _context.SaveChanges();
         }
 
+
         public void UpdateBeer(Beer beer)
         {
             _context.Beers.Update(beer);
