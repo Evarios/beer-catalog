@@ -5,6 +5,10 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrozdziakJankowski.BeerCatalog.DAO", "BrozdziakJankowski.BeerCatalog.DAO\BrozdziakJankowski.BeerCatalog.DAO.csproj", "{56AF51DF-3E78-4635-996E-B104D3B5F02F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrozdziakJankowski.BeerCatalog.Core", "BrozdziakJankowski.BeerCatalog.Core\BrozdziakJankowski.BeerCatalog.Core.csproj", "{FC8EC5AE-04BC-47FE-A94C-2A6BFCD4417B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrozdziakJankowski.BeerCatalog.Interfaces", "BrozdziakJankowski.BeerCatalog.Interfaces\BrozdziakJankowski.BeerCatalog.Interfaces.csproj", "{332335D4-DBA4-449E-BD26-2C44B6609B20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{56AF51DF-3E78-4635-996E-B104D3B5F02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56AF51DF-3E78-4635-996E-B104D3B5F02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56AF51DF-3E78-4635-996E-B104D3B5F02F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8EC5AE-04BC-47FE-A94C-2A6BFCD4417B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8EC5AE-04BC-47FE-A94C-2A6BFCD4417B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8EC5AE-04BC-47FE-A94C-2A6BFCD4417B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8EC5AE-04BC-47FE-A94C-2A6BFCD4417B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332335D4-DBA4-449E-BD26-2C44B6609B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332335D4-DBA4-449E-BD26-2C44B6609B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332335D4-DBA4-449E-BD26-2C44B6609B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332335D4-DBA4-449E-BD26-2C44B6609B20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
