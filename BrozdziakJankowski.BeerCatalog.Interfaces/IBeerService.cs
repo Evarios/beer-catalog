@@ -10,7 +10,9 @@ namespace BrozdziakJankowski.BeerCatalog.Interfaces
     public interface IBeerService
     {
         IEnumerable<Beer> GetAllBeers();
-        Beer GetBeerDetails(int beerId);
-        void AddNewBeer(Beer beer);
+        Beer GetBeerById(int id);
+        void AddBeer(Beer beer);
+        void UpdateBeer(Beer beer);
+        void DeleteBeer(int id);
     }
 }

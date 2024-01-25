@@ -9,12 +9,10 @@ namespace BrozdziakJankowski.BeerCatalog.Interfaces
 {
     public interface IProducerService
     {
-        public interface IProducerService
-        {
-            IEnumerable<Producer> GetAllProducers();
-            Producer GetProducerDetails(int producerId);
-            void AddNewProducer(Producer producer);
-            // Other business operations as needed
-        }
+        IEnumerable<Producer> GetAllProducers();
+        Producer GetProducerById(int id);
+        void AddProducer(Producer producer);
+        void UpdateProducer(Producer producer);
+        void DeleteProducer(int id);
     }
 }

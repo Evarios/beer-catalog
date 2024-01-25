@@ -9,10 +9,10 @@ namespace BrozdziakJankowski.BeerCatalog.Interfaces
 {
     public interface IProducerRepository
     {
-        Task<IEnumerable<Producer>> GetAllProducers();
-        Task<Producer> GetProducerById(int producerId);
-        Task AddProducer(Producer producer);
-        Task UpdateProducer(Producer producer);
-        Task DeleteProducer(int producerId);
+        IEnumerable<Producer> GetAllProducers();
+        Producer GetProducerById(int id);
+        void AddProducer(Producer producer);
+        void UpdateProducer(Producer producer);
+        void DeleteProducer(int id);
     }
 }
