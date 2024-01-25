@@ -1,4 +1,4 @@
-﻿using BrozdziakJankowski.BeerCatalog.DAO;
+﻿using BrozdziakJankowski.BeerCatalog.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

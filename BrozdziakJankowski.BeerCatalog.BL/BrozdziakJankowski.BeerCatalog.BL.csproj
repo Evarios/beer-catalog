@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrozdziakJankowski.BeerCatalog.Core\BrozdziakJankowski.BeerCatalog.Core.csproj" />
+    <ProjectReference Include="..\BrozdziakJankowski.BeerCatalog.DAO\BrozdziakJankowski.BeerCatalog.DAO.csproj" />
+    <ProjectReference Include="..\BrozdziakJankowski.BeerCatalog.Interfaces\BrozdziakJankowski.BeerCatalog.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace BrozdziakJankowski.BeerCatalog.DAO
+namespace BrozdziakJankowski.BeerCatalog.Models
 {
     public class Beer
     {

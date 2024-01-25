@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BrozdziakJankowski.BeerCatalog.Models\BrozdziakJankowski.BeerCatalog.Models.csproj" />
+    <ProjectReference Include="..\BrozdziakJankowski.BeerCatalog.Core\BrozdziakJankowski.BeerCatalog.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BrozdziakJankowski.BeerCatalog.Core\BrozdziakJankowski.BeerCatalog.Core.csproj" />
+    <ProjectReference Include="..\BrozdziakJankowski.BeerCatalog.Models\BrozdziakJankowski.BeerCatalog.Models.csproj" />
   </ItemGroup>
 
 </Project>
