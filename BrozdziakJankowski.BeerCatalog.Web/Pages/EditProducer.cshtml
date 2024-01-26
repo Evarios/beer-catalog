@@ -1,0 +1,21 @@
+﻿@page "{id:int}"
+@model EditProducerModel
+
+<h2>Edit Producer</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Producer.ProducerId" />
+    <div class="form-group">
+        <label asp-for="Producer.Name" class="control-label">Name</label>
+        <input asp-for="Producer.Name" class="form-control" />
+        <span asp-validation-for="Producer.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Producer.Country" class="control-label">Country</label>
+        <input asp-for="Producer.Country" class="form-control" />
+        <span asp-validation-for="Producer.Country" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+
+<a asp-page="/Producers">Back to List</a>

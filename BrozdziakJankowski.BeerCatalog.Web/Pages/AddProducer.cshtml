@@ -1,0 +1,28 @@
+﻿@page
+@model AddProducerModel
+@{
+}
+<h2>Add New Producer</h2>
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Producer.Name" class="control-label">Name</label>
+        <input asp-for="Producer.Name" class="form-control" />
+        <span asp-validation-for="Producer.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Producer.Country" class="control-label">Country</label>
+        <input asp-for="Producer.Country" class="form-control" />
+        <span asp-validation-for="Producer.Country" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Add Producer" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>

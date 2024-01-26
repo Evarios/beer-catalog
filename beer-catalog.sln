@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrozdziakJankowski.BeerCata
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrozdziakJankowski.BeerCatalog.Models", "BrozdziakJankowski.BeerCatalog.Models\BrozdziakJankowski.BeerCatalog.Models.csproj", "{894EA46D-8E8A-4E18-8C44-581A012CF984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrozdziakJankowski.BeerCatalog.Web", "BrozdziakJankowski.BeerCatalog.Web\BrozdziakJankowski.BeerCatalog.Web.csproj", "{2BB495F2-AAED-47FC-BEF1-89AB1511C3A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrozdziakJankowski.BeerCatalog.Web", "BrozdziakJankowski.BeerCatalog.Web\BrozdziakJankowski.BeerCatalog.Web.csproj", "{2BB495F2-AAED-47FC-BEF1-89AB1511C3A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

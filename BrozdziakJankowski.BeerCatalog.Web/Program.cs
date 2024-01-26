@@ -1,6 +1,7 @@
 using BrozdziakJankowski.BeerCatalog.BL;
 using BrozdziakJankowski.BeerCatalog.DAO;
 using BrozdziakJankowski.BeerCatalog.Interfaces;
+using Microsoft.EntityFrameworkCore.Storage;
 
 var builder = WebApplication.CreateBuilder(args);
 

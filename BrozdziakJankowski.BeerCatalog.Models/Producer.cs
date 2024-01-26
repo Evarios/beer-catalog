@@ -8,6 +8,10 @@ namespace BrozdziakJankowski.BeerCatalog.Models
 {
     public class Producer
     {
+        public Producer()
+        {
+            Beers = new List<Beer>();
+        }
         public int ProducerId { get; set; } // Primary Key
         public string Name { get; set; }
         public string Country { get; set; }

@@ -21,4 +21,10 @@
     <ProjectReference Include="..\BrozdziakJankowski.BeerCatalog.Models\BrozdziakJankowski.BeerCatalog.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="beerCatalog.db">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

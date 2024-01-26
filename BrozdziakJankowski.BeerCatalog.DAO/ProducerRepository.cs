@@ -10,7 +10,7 @@ namespace BrozdziakJankowski.BeerCatalog.DAO
 {
     public class ProducerRepository : IProducerRepository
     {
-        private readonly BeerCatalogContext _context; // Assuming you have a DbContext
+        private readonly BeerCatalogContext _context;
 
         public ProducerRepository(BeerCatalogContext context)
         {

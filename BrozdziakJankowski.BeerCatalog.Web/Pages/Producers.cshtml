@@ -1,0 +1,33 @@
+﻿@page
+@model ProducersModel
+
+<h2>Producers</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Actions</th> <!-- Column for actions -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producer in Model.Producers)
+        {
+            <tr>
+                <td>@producer.Name</td>
+                <td>@producer.Country</td>
+                <td>
+                    <!-- Edit button -->
+                    <a asp-page="/EditProducer" asp-route-id="@producer.ProducerId" class="btn btn-primary">Edit</a>
+                    <!-- Delete button -->
+                    <form method="post" asp-page="/Producers" asp-route-deleteId="@producer.ProducerId" class="d-inline">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-page="/AddProducer" class="btn btn-primary">Add New Producer</a>
