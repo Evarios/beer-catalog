@@ -3,6 +3,20 @@
 
 <h2>Beers</h2>
 
+<form method="get">
+    <div class="form-group">
+        <label for="beerTypeFilter">Filter by Type:</label>
+        <select id="beerTypeFilter" name="TypeFilter" class="form-control">
+            <option value="">All Types</option>
+            @foreach (var type in Model.BeerTypes)
+            {
+                <option value="@type">@type</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Filter</button>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -23,7 +37,7 @@
                 <td>@Model.ProducerNames[beer.ProducerId]</td>
                 <td>
                     <a asp-page="/EditBeer" asp-route-id="@beer.BeerId" class="btn btn-primary">Edit</a>
-                    <form method="post" asp-page="/Beers" asp-route-deleteId="@beer.BeerId" class="d-inline">
+                    <form method="post" asp-page-handler="Delete" asp-route-deleteId="@beer.BeerId">
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                 </td>
