@@ -1,0 +1,34 @@
+﻿@page
+@model AddBeerModel
+
+<h2>Add Beer</h2>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Beer.Name" class="control-label">Name</label>
+        <input asp-for="Beer.Name" class="form-control" />
+        <span asp-validation-for="Beer.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Beer.Type" class="control-label">Type</label>
+        <select asp-for="Beer.Type" asp-items="Model.BeerTypes" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Beer.AlcoholContent" class="control-label">Alcohol Content</label>
+        <input asp-for="Beer.AlcoholContent" class="form-control" />
+        <span asp-validation-for="Beer.AlcoholContent" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Beer.ProducerId" class="control-label">Producer</label>
+        <select asp-for="Beer.ProducerId" asp-items="Model.Producers" class="form-control"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<a asp-page="/Beers">Back to List</a>

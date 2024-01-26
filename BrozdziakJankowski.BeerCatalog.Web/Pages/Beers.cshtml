@@ -1,0 +1,35 @@
+﻿@page
+@model BeersModel
+
+<h2>Beers</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Alcohol Content</th>
+            <th>Producer</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var beer in Model.Beers)
+        {
+            <tr>
+                <td>@beer.Name</td>
+                <td>@beer.Type</td>
+                <td>@beer.AlcoholContent %</td>
+                <td>@Model.ProducerNames[beer.ProducerId]</td>
+                <td>
+                    <a asp-page="/EditBeer" asp-route-id="@beer.BeerId" class="btn btn-primary">Edit</a>
+                    <form method="post" asp-page="/Beers" asp-route-deleteId="@beer.BeerId" class="d-inline">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-page="/AddBeer" class="btn btn-primary">Add New Beer</a>
