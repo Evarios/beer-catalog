@@ -15,8 +15,12 @@ namespace BrozdziakJankowski.BeerCatalog.DAO
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            var baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            var relativePath = @"../../../../BrozdziakJankowski.BeerCatalog.DAO/beerCatalog.db";
+            var dbPath = Path.GetFullPath(Path.Combine(baseDir, relativePath));
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
             //optionsBuilder.UseSqlite("Data Source=beerCatalog.db");
-            optionsBuilder.UseSqlite("Data Source=\"D:\\OneDrive\\Dokumenty\\Studia\\sem7v2\\PW\\projekt\\beer-catalog\\BrozdziakJankowski.BeerCatalog.DAO\\beerCatalog.db\"");
+            //optionsBuilder.UseSqlite("Data Source=\"D:\\OneDrive\\Dokumenty\\Studia\\sem7v2\\PW\\projekt\\beer-catalog\\BrozdziakJankowski.BeerCatalog.DAO\\beerCatalog.db\"");
         }
     }
 }
