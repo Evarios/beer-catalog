@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrozdziakJankowski.BeerCatalog.UI.MainPage">
+
+    <StackLayout Spacing="20" Padding="15">
+        <!-- Your buttons and other UI elements go here -->
+        <Button Text="Add Producer" Command="{Binding AddProducerCommand}" />
+        <Button Text="Producer List" Command="{Binding ViewProducersCommand}" />
+        <Button Text="Add Beer" Command="{Binding AddBeerCommand}" />
+        <Button Text="Beer List" Command="{Binding ViewBeersCommand}" />
+    </StackLayout>
+
+</ContentPage>

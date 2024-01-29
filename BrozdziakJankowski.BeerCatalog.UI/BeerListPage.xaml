@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrozdziakJankowski.BeerCatalog.UI.BeerListPage"
+             Title="Beer List">
+    <StackLayout>
+        <Picker x:Name="filterPicker" Title="Filter by Beer Type"
+        SelectedIndexChanged="OnFilterPickerSelectedIndexChanged">
+        </Picker>
+        <ListView x:Name="beerListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Entry Text="{Binding Name, Mode=TwoWay}" WidthRequest="100" />
+                            <Entry Text="{Binding AlcoholContent, Mode=TwoWay}" Keyboard="Numeric" WidthRequest="50" />
+
+                            <Picker Title="Beer Type" WidthRequest="100"
+        BindingContextChanged="OnBeerTypePickerBindingContextChanged"
+        SelectedIndexChanged="OnBeerTypePickerSelectedIndexChanged">
+                            </Picker>
+
+                            <Picker Title="Producer" WidthRequest="100"
+        BindingContextChanged="OnProducerPickerBindingContextChanged"
+        SelectedIndexChanged="OnProducerPickerSelectedIndexChanged">
+                            </Picker>
+
+
+                            <Button Text="Save" CommandParameter="{Binding .}" Clicked="OnSaveClicked" />
+                            <Button Text="Delete" CommandParameter="{Binding .}" Clicked="OnDeleteClicked" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

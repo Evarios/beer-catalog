@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrozdziakJankowski.BeerCatalog.UI.AddProducerPage">
+
+    <VerticalStackLayout Spacing="25" Padding="30">
+        <Label Text="Add New Producer" 
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="producerNameEntry" Placeholder="Name" />
+        <Entry x:Name="producerCountryEntry" Placeholder="Country" />
+
+        <Button Text="Save Producer" 
+                Clicked="OnSaveClicked" />
+    </VerticalStackLayout>
+</ContentPage>

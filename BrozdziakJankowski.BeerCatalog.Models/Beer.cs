@@ -8,13 +8,12 @@ namespace BrozdziakJankowski.BeerCatalog.Models
 {
     public class Beer
     {
-        public int BeerId { get; set; } // Primary Key
+        public int BeerId { get; set; }
         public string Name { get; set; }
         public BeerType Type { get; set; }
         public double AlcoholContent { get; set; }
-        public int ProducerId { get; set; } // Foreign Key
+        public int ProducerId { get; set; }
 
-        // Navigation property back to Producer
         public Producer Producer { get; set; }
     }
 }

@@ -12,6 +12,5 @@ namespace BrozdziakJankowski.BeerCatalog.Core
         Ale,
         Stout,
         Pilsner
-        // No need for more types as this is just an example
     }
 }

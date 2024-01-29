@@ -16,7 +16,7 @@ namespace BrozdziakJankowski.BeerCatalog.DAO
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-            var relativePath = @"../../../../BrozdziakJankowski.BeerCatalog.DAO/beerCatalog.db";
+            var relativePath = @"../../../../../../BrozdziakJankowski.BeerCatalog.DAO/beerCatalog.db";
             var dbPath = Path.GetFullPath(Path.Combine(baseDir, relativePath));
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
             //optionsBuilder.UseSqlite("Data Source=beerCatalog.db");
